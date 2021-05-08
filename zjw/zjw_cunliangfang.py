@@ -145,10 +145,10 @@ if flag == 1:
 
     # message = MIMEText('Python 邮件发送测试...', 'plain', 'utf-8')
     message = MIMEText(mail_msg, 'html', 'utf-8')
-    message['From'] = Header("邮件自动发送--存量房网上签约数据", 'utf-8')
-    message['To'] = Header("宋小宝", 'utf-8')
+    message['From'] = Header("邮件自动发送--网上签约数据", 'utf-8')
+    message['To'] = Header("王玉玲", 'utf-8')
 
-    subject = '住建委爬取存量房网上签约数据'
+    subject = '住建委爬取网上签约数据'
     message['Subject'] = Header(subject, 'utf-8')
 
     try:
